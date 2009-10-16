@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type='text/javascript' src='js/jquery.min.js'></script>
+<script type='text/javascript' src='js/lavalamp.min.js'></script>
+<script type='text/javascript' src='js/easing.js'></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+$(function(){$(".lavaLamp").lavaLamp({ fx: "backout", speed: 700 })});
+/* ]]> */
+</script>
+	<link rel="stylesheet" type="text/css" href="css/fancy.css" media="screen" />
+	<script type="text/javascript" src="js/jquery.pngFix.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-1.0.0.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//Activate FancyBox
+			$("p.test1 a").fancybox({
+				'hideOnContentClick': true
+			});
+			
+			$("p#test2 a").fancybox({
+				'zoomSpeedIn':	0, 
+				'zoomSpeedOut':	0, 
+				'overlayShow':	true
+			});
+			
+			$("a#custom_1").fancybox({
+				'itemLoadCallback': getGroupItems
+			});
+			
+			$("a#custom_2, a#custom_3").fancybox({
+				'zoomSpeedIn':	0, 
+				'zoomSpeedOut':	0
+			});
+			
+			//Some lines for this page
+			$("div#donate").bind("click", function() {
+				$("#donate_form").submit()
+			});
+			
+			$("#comment_form").attr("action", "/fancy/add_comment"); $("#age").val('fancy'); //die spamers, die...
+		});
+
+		//List can contain mixed media too
+		//Parameter "o" ir optional and used to override settings, example: {url: "http://www.google.com", title: false,  o: {'frameWidth': 200} }
+		var imageList = [
+			{url: "images/6_b.jpg", title: "First image"},
+			{url: "images/7_b.jpg", title: "Second image"},
+			{url: "images/8_b.jpg", title: "Third image"}
+		];
+		
+		function getGroupItems(opts) {
+			jQuery.each(imageList, function(i, val) {
+		        opts.itemArray.push(val);
+		    });
+		}
+		
+	</script>
+<title>Welcome to ubuntu-tweak.com</title>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="header">
+		<a href="#">Ubuntu Tweak</a>
+		<form action="none">
+			<input type="text" id="s" name="s" value="Search this site..." onfocus="if (value =='Search this site...'){value =''}" onblur="if (value ==''){value='Search this site...'}" />
+			<input type="submit" value=" " id="searchsubmit"/>
+		</form>
+	</div>
+	<div id="navi">
+		<ul class="lavaLamp">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">App</a></li>
+			<li><a href="#">Source</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+		<div id="logon">
+			<a href="#">Login</a><span> / </span><a href="#">Register</a>
+		</div>		
+	</div>
+	<div class="appcontent">
+		<div class="appitem" id="appitemtop">
+			<div class="applogo">
+				<img src="images/applogo.png" />
+				<a href="#">download</a>
+			</div>
+			<div class="appinfo">
+				<p>
+					<h2><a href="#">Software name 1.2.0</a></h2>
+					<span class="date">2009.10.1 17:30</span>
+				</p>
+				<div class="appdis">
+					Songbird is a desktop Web player, a digital jukebox and Web browser mash-up. Like Winamp, it supports extensions and skins feathers. Like Firefox...
+					<a href="#" class="readmore">Read More >></a>
+				</div>
+				<div class="appdetail"><span class="homepage"><a href="#">Home page</a></span><span class="appcategory"><a href="#">Category1111</a></span><span class="views">1,3333</span></div>
+			</div>
+			<div class="appscreenshot">
+				<img src="images/screenshot.png" />
+				<p class="test1"><a href="images/test.png"><img class="sstop" src="images/appscreenshotbg.png" /></a></p>
+			</div>
+			<div class="vote">
+				<img src="images/vote.png" />
+			</div>
+		</div>
+		<div class="appitem">
+			<div class="applogo">
+				<img src="images/applogo.png" />
+				<a href="#">download</a>
+			</div>
+			<div class="appinfo">
+				<p>
+					<h2><a href="#">Software name 1.2.0</a></h2>
+					<span class="date">2009.10.1 17:30</span>
+				</p>
+				<div class="appdis">
+					Songbird is a desktop Web player, a digital jukebox and Web browser mash-up. Like Winamp, it supports extensions and skins feathers. Like Firefox...
+					<a href="#" class="readmore">Read More >></a>
+				</div>
+				<div class="appdetail"><span class="homepage"><a href="#">Home page</a></span><span class="appcategory"><a href="#">Category</a></span><span class="views">1,3333</span></div>
+			</div>
+			<div class="appscreenshot">
+				<img src="images/screenshot.png" />
+				<p class="test1"><a href="images/test.png"><img class="sstop" src="images/appscreenshotbg.png" /></a></p>
+			</div>
+			<div class="vote">
+				<img src="images/vote.png" />
+			</div>
+		</div>
+		<div class="appitem">
+			<div class="applogo">
+				<img src="images/applogo.png" />
+				<a href="#">download</a>
+			</div>
+			<div class="appinfo">
+				<p>
+					<h2><a href="#">Software name 1.2.0</a></h2>
+					<span class="date">2009.10.1 17:30</span>
+				</p>
+				<div class="appdis">
+					Songbird is a desktop Web player, a digital jukebox and Web browser mash-up. Like Winamp, it supports extensions and skins feathers. Like Firefox...
+					<a href="#" class="readmore">Read More >></a>
+				</div>
+				<div class="appdetail"><span class="homepage"><a href="#">Home page</a></span><span class="appcategory"><a href="#">Category</a></span><span class="views">1,3333</span></div>
+			</div>
+			<div class="appscreenshot">
+				<img src="images/screenshot.png" />
+				<p class="test1"><a href="images/test.png"><img class="sstop" src="images/appscreenshotbg.png" /></a></p>
+			</div>
+			<div class="vote">
+				<img src="images/vote.png" />
+			</div>
+		</div>
+		<div class="appitem">
+			<div class="applogo">
+				<img src="images/applogo.png" />
+				<a href="#">download</a>
+			</div>
+			<div class="appinfo">
+				<p>
+					<h2><a href="#">Software name 1.2.0</a></h2>
+					<span class="date">2009.10.1 17:30</span>
+				</p>
+				<div class="appdis">
+					Songbird is a desktop Web player, a digital jukebox and Web browser mash-up. Like Winamp, it supports extensions and skins feathers. Like Firefox...
+					<a href="#" class="readmore">Read More >></a>
+				</div>
+				<div class="appdetail"><span class="homepage"><a href="#">Home page</a></span><span class="appcategory"><a href="#">Category</a></span><span class="views">1,3333</span></div>
+			</div>
+			<div class="appscreenshot">
+				<img src="images/screenshot.png" />
+				<p class="test1"><a href="images/test.png"><img class="sstop" src="images/appscreenshotbg.png" /></a></p>
+			</div>
+			<div class="vote">
+				<img src="images/vote.png" />
+			</div>
+		</div>
+		<div class="appitem">
+			<div class="applogo">
+				<img src="images/applogo.png" />
+				<a href="#">download</a>
+			</div>
+			<div class="appinfo">
+				<p>
+					<h2><a href="#">Software name 1.2.0</a></h2>
+					<span class="date">2009.10.1 17:30</span>
+				</p>
+				<div class="appdis">
+					Songbird is a desktop Web player, a digital jukebox and Web browser mash-up. Like Winamp, it supports extensions and skins feathers. Like Firefox...
+					<a href="#" class="readmore">Read More >></a>
+				</div>
+				<div class="appdetail"><span class="homepage"><a href="#">Home page</a></span><span class="appcategory"><a href="#">Category</a></span><span class="views">1,3333</span></div>
+			</div>
+			<div class="appscreenshot">
+				<img src="images/screenshot.png" />
+				<p class="test1"><a href="images/test.png"><img class="sstop" src="images/appscreenshotbg.png" /></a></p>
+			</div>
+			<div class="vote">
+				<img src="images/vote.png" />
+			</div>
+		</div>
+		<div class="appitem">
+			<div class="applogo">
+				<img src="images/applogo.png" />
+				<a href="#">download</a>
+			</div>
+			<div class="appinfo">
+				<p>
+					<h2><a href="#">Software name 1.2.0</a></h2>
+					<span class="date">2009.10.1 17:30</span>
+				</p>
+				<div class="appdis">
+					Songbird is a desktop Web player, a digital jukebox and Web browser mash-up. Like Winamp, it supports extensions and skins feathers. Like Firefox...
+					<a href="#" class="readmore">Read More >></a>
+				</div>
+				<div class="appdetail"><span class="homepage"><a href="#">Home page</a></span><span class="appcategory"><a href="#">Category</a></span><span class="views">1,3333</span></div>
+			</div>
+			<div class="appscreenshot">
+				<img src="images/screenshot.png" />
+				<p class="test1"><a href="images/test.png"><img class="sstop" src="images/appscreenshotbg.png" /></a></p>
+			</div>
+			<div class="vote">
+				<img src="images/vote.png" />
+			</div>
+		</div>
+	</div>
+	<div class="sidebar">
+		<div class="sidebaritem" id="sidebaritemtop">
+			<a class="title" href="#">Category</a>
+			<ul>
+				<li><a href="#">OS</a></li>
+				<li><a href="#">Music</a></li>
+				<li><a href="#">Pictues</a></li>
+				<li><a href="#">Games</a></li>
+				<li><a href="#">Network</a></li>
+				<li><a href="#">Software</a></li>
+			</ul>
+		</div>
+		<div class="sidebaritem">
+			<a class="title" href="#">Hight Rated</a>
+			<ul>
+				<li><a href="#">OS</a></li>
+				<li><a href="#">Music</a></li>
+				<li><a href="#">Pictues</a></li>
+				<li><a href="#">Games</a></li>
+				<li><a href="#">Network</a></li>
+				<li><a href="#">Software</a></li>
+			</ul>
+		</div>
+		<div class="sidebaritem">
+			<a class="title" href="#">Titles</a>
+			<ul>
+				<li><a href="#">testtesttesttesttest2</a></li>
+				<li><a href="#">testtesttesttesttest3</a></li>
+				<li><a href="#">testtesttesttesttest4</a></li>
+				<li><a href="#">testtesttesttesttest5</a></li>
+				<li><a href="#">testtesttesttesttest6</a></li>
+				<li><a href="#">testtesttesttesttest3</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="blank"></div>
+	<div id="footer">
+		<p>I don't konw</p>
+	</div>
+</div>
+</body>
+
+</html>
