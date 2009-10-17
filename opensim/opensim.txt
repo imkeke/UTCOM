@@ -1,1 +1,22 @@
 OpenSim全称OpenSimulator，是一款开源的3D应用服务器软件。它可以用来创建一个虚拟环境或者虚拟世界，然后可以通过不同的客户端程式来访问这个服务，也可以使用多种协议进行访问。它也是一个可以扩展的平台，模拟出的虚拟三维空间可以使用Sl的客户端程式进行登录，用Opensim搭建的虚拟空间里的原始物体都可以由用户进行动态的创建，修改，删除和执行相应的脚本。
+
+接下来就让我们一起来搭建一个opensim伺服器，创建一个属于自己的虚拟世界吧！
+
+笔者的搭建平台是Ubuntu9.04。
+
+1.下载：
+首先去OpenSim官方网站上下载好源代码，可以到http://opensimulator.org/wiki/Download下载，当前最新正式版为0.6.7。当然也可以使用git克隆下来最新的测试版源代码：git clone git://opensimulator.org/git/opensim
+笔者在这里下载了0.6.7作为本次搭建的源代码。
+
+2.解决依赖关系：
+在安装opensim之前需要安装它所依赖的软件包，使用以下命令来完成：
+sudo apt-get install subversion nant mono-gmcs libmono-microsoft8.0-cil libmono-system-runtime2.0-cil libgdiplus libmono-i18n2.0-cil libmono-oracle2.0-cil ruby
+
+3.编译安装：
+首先解压刚才下载回来的源代码包，并且打开终端机cd进入opensim目录。步骤如下：
+cd opensim
+./runprebuild.sh
+nant
+经过几分钟的等待（视硬体配置高低而定），便出现了BUILD SUCCEEDED的字样，说明安装成功，如图（01）.
+
+
