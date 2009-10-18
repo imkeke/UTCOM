@@ -1,0 +1,14 @@
+1）下载GRUB 4 DOS解压取GRLDR放c盘，其他可以不要。
+2）boot.ini加一行：C:\GRLDR="GRUB 4 DOS"，稍候重启就选这个。
+3）下载9.10的Desktop ISO放D盘根目录，并且解压ISO在casper文件夹取vmlinuz和initrd.lz放D盘根目录，最后在C盘下建个menu.lst，内容为：
+title Install Ubuntu
+
+root (hd0,4)
+
+kernel (hd0,4)/vmlinuz boot=casper iso-scan/filename=/karmic-desktop-i386.iso ro quiet
+
+splash locale=zh_CN.UTF-8
+
+initrd (hd0,4)/initrd.lz
+
+重启，然后就进入Live CD模式了。安装前打开终端运行sudo umount -l /isodriver以免发生错误中断安装。
