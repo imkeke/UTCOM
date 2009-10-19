@@ -5,10 +5,17 @@ title Install Ubuntu
 
 root (hd0,4)
 
-kernel (hd0,4)/vmlinuz boot=casper iso-scan/filename=/karmic-desktop-i386.iso ro quiet
+kernel (hd0,4)/vmlinuz boot=casper iso-scan/filename=/ubuntu.iso ro quiet
 
 splash locale=zh_CN.UTF-8
 
 initrd (hd0,4)/initrd.lz
 
 重启，然后就进入Live CD模式了。安装前打开终端运行sudo umount -l /isodriver以免发生错误中断安装。
+
+有可能是这个：
+title 【4】启动Ubuntu9.10 (此处回车进入)
+root (hd0,4)
+kernel (hd0,4)/vmlinuz boot=casper iso-scan/filename=/ubuntu.iso ro quiet splash --
+label check live-install
+initrd (hd0,4)/initrd.lz
