@@ -6,17 +6,21 @@ OpenSim全称OpenSimulator，是一款开源的3D应用服务器软件。它可�
 
 1.下载：
 首先去OpenSim官方网站上下载好源代码，可以到http://opensimulator.org/wiki/Download下载，当前最新正式版为0.6.7。当然也可以使用git克隆下来最新的测试版源代码：git clone git://opensimulator.org/git/opensim
-笔者在这里下载了0.6.7作为本次搭建的源代码。
+笔者在这里下载了0.6.7作为本次搭建的源代码。命令如下：
+wget http://dist.opensimulator.org/opensim-0.6.7-release.tar.gz
+tar -xzvf opensim-0.6.7-release.tar.gz
 
 2.解决依赖关系：
-在安装opensim之前需要安装它所依赖的软件包，使用以下命令来完成：
+在编译安装opensim之前需要安装它所依赖的软件包，使用以下命令来完成：
 sudo apt-get install subversion nant mono-gmcs libmono-microsoft8.0-cil libmono-system-runtime2.0-cil libgdiplus libmono-i18n2.0-cil libmono-oracle2.0-cil ruby
 
 3.编译安装：
 首先解压刚才下载回来的源代码包，并且打开终端机cd进入opensim目录。步骤如下：
-cd opensim
+cd opensim-0.6.7-release
 ./runprebuild.sh
 nant
 经过几分钟的等待（视硬体配置高低而定），便出现了BUILD SUCCEEDED的字样，说明安装成功，如图（01）.
+
+d8dd92c7-c0da-40c7-a06b-9fa18e3c93b8
 
 
