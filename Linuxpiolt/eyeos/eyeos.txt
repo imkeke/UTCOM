@@ -1,0 +1,123 @@
+欄名：軟體教室 熱門軟體
+顏色：B/W
+版數：5
+在線作業系統 eyeOS（大）
+文/圖：屈武斌
+電子郵件：editorial@linuxpilot.net
+(eyeos00.jpg) 
+
+eyeOS是一個開源線上作業系統，用戶可以下載 eyeOS 安裝到自己的伺服器上，或者使用 eyeos.info 提供的免費服務。eyeOS預設安裝了一些辦公軟體，Web 應用程式以及 PIM  應用程式等工具，但像 Firefox 一樣，用戶可以通過安裝強大的外掛程式來豐富 eyeOS 的功能，打造完美的作業系統。
+正如它的開發哲學「Taking Your Life Everywhere」一樣，你可以在任何地方使用你的 eyeOS 作業系統，只要你有一個瀏覽器就可以了。目前 eyeOS 的最新版本為1.6.0.1，其功能已經相當完善，本文將介紹 eyeOS 在 Fedora 8 下的安裝及其應用。
+
+eyeOS的安裝（中）
+在 Fedora 8 下，已經預設安裝好了Apache 和 PHP，所以在設定好了Apache之後，eyeOS 的安裝是極其簡單的。從官方網站下載最新的安裝套件，最新的是 eyeOS_1.6.0.1.zip。
+http://www.eyeos.org/downloads
+
+解壓到 Apache 的 html 目錄，我的個人網頁目錄是 ~/quwb/public_html/，解壓之後就多了一個 eyeOS 目錄，這個目錄需要 777 的許可權，沿用預設值即可。在瀏覽器上鍵入 eyeOS 的存取位址，筆者的局域網位址是 http://192.168.1.28/~quwb/eyeOS。第一次登入需要設置 root 密碼（圖1），設置完之後按 ENTER 即進入使用者登入和註冊界面（圖2），建立用戶 quwb。使用用戶名 quwb 登入後，圖3就是現在eyeOS 桌面，現在開始我們的使用 eyeOS 之旅吧。
+(eyeos01.jpg)
+(eyeos02.jpg)
+(eyeos03.jpg)
+
+eyeOS 的使用（中）
+桌面（圖3）最頂端的是巡覽列，有 Favorites、Office、Network、Accessories（圖4）、Game、Systems、Places。左側是桌面快捷圖示，有 eyeApps、Calendar、Contacts、Home、RSS、Trash。桌面下方的綠色按鈕是系統功能表列，有 System preferences、Applications、Aout eyeOS、Launch App、close session。最右側的是 miniActions，用於快速啟動應用程式。右下方是系統時間，可以看到當前系統的時間和日期，點擊出現圖6所示的日曆表。
+(eyeos04.jpg)
+(eyeos05.jpg)
+(eyeos06.jpg)
+
+文件管理（中）
+點擊桌面左側的 Home 圖示，便會出現 eyeFiles 檔案管理員（圖7）。在這裡你可以上傳、下載、複製、剪貼、刪除、建立資料夾及建立新檔案等操作，中間下方顯示的是右鍵功能表。圖8顯示的是從本地上傳檔到eyeOS 的情形。點擊 Trash 圖示，打開垃圾檔案管理員，如圖9所示。整個檔的管理和操作與 Windows XP 以及 Gnome 和 KDE 的操作都很相似，很易上手。
+(eyeos07.jpg)
+(eyeos08.jpg)
+(eyeos09.jpg)
+
+網路應用（中）
+點擊上方巡覽列中的 Network，再點擊下拉式功能表中的 Navigator，這就是 eyeOS 的瀏覽器（圖10），上方是功能表列，左側是我的最愛；點擊瀏覽器上方的 Search，就會出現如圖 11所示的搜索側邊欄，已經預設了我們常用的搜尋引擎了，如網路搜索 Google，知識搜索 wikipedia 等，整個瀏覽器和整個作業系統一樣，給人一種清新飄逸的感覺。圖12顯示的是 eyeOS 的 FTP 應用程式。
+(eyeos10.jpg)
+(eyeos11.jpg)
+(eyeos12.jpg)
+
+個人資訊管理（中）
+eyeOS 有一套豐富的個人資訊管理軟體，如 Contacts、Calendar、Internal Messaging、RSS feed Reader、Mail Client、Public Board 等等，在上方的巡覽列中可以一一找到。圖13是 eyeContacts，用於連絡人的資訊管理，使用者可以單個添加連絡人，也可以從其他同類軟體如 Gmail 匯出連絡人，不過匯出格式必須是 .vcf 格式，然後再用 eyeContacts 導入。圖14是 eyeCalendar，用於日程管理，可以看出界面非常清新簡單，可以按天、週等組織日程。
+(eyeos13.jpg)
+(eyeos14.jpg)
+
+圖15和圖16演示的是 eyeMessages 的使用，在圖15中，用戶 eric 給用戶 quwb 發了一個即時資訊，在圖16中，使用者 quwb 收到了並正在閱讀資訊。另外一個資訊交流工具是 eyeBoard，這個 eyeBoard 非常類似於 QQ 群，可以多人聊天，在 eyeBoard 中，是所有的 eyeOS 用戶（圖17）。用戶 eric 和 quwb 在聊天。eyeBoard 和 eyeMessages，一個是多人聊天，一個是兩人通信。圖18顯示的是 eyeMail，一個郵件客戶端，用於收發郵件。圖19所示的是 eyeFeeds，用於閱讀用戶訂閱到 RSS 新聞。
+(eyeos15.jpg)
+(eyeos16.jpg)
+(eyeos17.jpg)
+(eyeos18.jpg)
+(eyeos19.jpg)
+
+Office應用（中）
+在 eyeOS 中，也有類似於Microsoft  Office 等辦公室套件，除了目前不能直接建立 Presentations 檔案之外，eyeDocs 和 eyeSheets 都可以直接建立。圖20演示的是使用 eyeDocs 來寫一封富含格式的郵件。從上面的快顯功能表中，我們可以看到 eyeDocs 含有豐富的功能，可以滿足我們的日常文檔撰寫要求，下面的對話方塊詢問保存檔的路徑和檔案名。圖21所示的是 eyeSheets 的界面。圖22所示的是 eyeNotes，可以用它來記錄我們的日記。
+(eyeos20.jpg)
+(eyeos21.jpg)
+(eyeos22.jpg)
+
+娛樂及其他應用（中）
+eyeOS 也提供了簡單的遊戲，以供用戶在工作之餘放鬆，雖然目前遊戲數量還不是很多， 但由於 eyeOS 的開源性質，相信開源界很快會提供豐富的遊戲來到。eyeProcess 是 eyeOS 中的一個進程管理軟體（圖24），使用者可以選擇某個僵死的進程，然後手動停掉。圖25是一個小巧的計算器，圖26顯示的是從命令列運行應用軟體的一個小工具。
+(eyeos23.jpg)
+(eyeos24.jpg)
+(eyeos25.jpg)
+(eyeos26.jpg)
+
+系統組態（中）
+在桌面的空白地方點擊右鍵，會出現圖27左側小圖所示的右鍵選單，再點擊 Preferences，就會出現右側的系統組態面板。在這裡我們可以修改使用者資訊、添加自己的全名、郵寄地址、修改密碼（圖28）、修改系統預設語言，也可改變桌面背景以及系統主題，還可以修改自啟動程式，修改瀏覽器預設主頁等。圖29所示的是 eyeApps 應用程式瀏覽視窗，這裡列出了所有的應用程式，點擊上方的 Manage Dock，將出現圖30所示的應用程式管理視窗，這裡將應用程式按照類別分類，使用者可以自己的需求添加或刪除每個分類下面的程式。
+(eyeos27.jpg)
+(eyeos28.jpg)
+(eyeos29.jpg)
+(eyeos30.jpg)
+
+外掛程式的安裝（中）
+Firefox 瀏覽器如此流行的其中一個原因，就是有豐富的外掛程式。開源的 eyeOS 也有豐富的外掛程式，下面介紹一下如何安裝 eyeOS 的外掛程式，以豐富 eyeOS 的功能。當然，安裝外掛程式需要 root 許可權。在 http://eyeos-apps.org/index.php 這個網站上（圖31），我們可以找到很多的外掛程式，由於筆者是從事生命科學工作的，所以選擇 Science LIMS 作為例子，說明如何安裝 eyeOS 外掛程式。先下載 meyeScience 1.0 到本地電腦上，在桌面上點擊滑鼠右鍵，選擇 upload files，上傳剛才下載的檔到桌面上（圖32）。左鍵點擊上傳的外掛程式安裝套件，彈出確認對話方塊（圖33），點擊確定後將彈出安裝成功資訊。點擊桌面圖示 eyeApps 便會看到安裝好的 meyeScience（圖34），點擊打開（圖35）表示安裝成功。整個安裝過程很簡單，圖31中顯示的多種外掛程式都可以這樣很容易的安裝，使用者可以根據自己的需要安裝不同的軟體，打造自己的eyeOS系統。
+(eyeos31.jpg)
+(eyeos32.jpg)
+(eyeos33.jpg)
+(eyeos34.jpg)
+(eyeos35.jpg)
+
+eyeOS 使用總結（中）
+雖然 eyeOS 推出時間不長，但得益於無窮的開源力量的推進，發展成為今天的擁有眾多外掛程式的多功能線上作業系統，在辦公室軟體、網路、個人資訊等各個方面均有良好的發展勢頭，相信不久的將來，eyeOS 會成為一個成功的線上作業系統。
+
+[
+作者簡介
+作者的專業是生物資訊學（Bioinformatics），熟悉目前專為生物資訊學而制定的多種 Linux 版本，以及學術研究領域的開放源碼軟體如 Lyx 和 JabRef 等等，以介紹在 Linux 好用、尤其是能代替 Windows 方案的軟體為榮。
+]
+
+caption:
+(eyeos00.jpg) 2008 (CC) By kaibara87. Some rights reserved. 
+(eyeos01.jpg)圖1：eyeOS安裝界面。
+(eyeos02.jpg)圖2：使用者登入和註冊界面。
+(eyeos03.jpg)圖3：漂亮簡潔的系統桌面。
+(eyeos04.jpg)圖4：系統巡覽列 Accessories。
+(eyeos05.jpg)圖5：系統功能表列。
+(eyeos06.jpg)圖6：右下角的系統時間。
+(eyeos07.jpg)圖7：檔案管理員。
+(eyeos08.jpg)圖8：上傳文件。
+(eyeos09.jpg)圖9：垃圾檔案管理員。
+(eyeos10.jpg)圖10：用 eyeNav 瀏覽 linuxpilot.net 網站。
+(eyeos11.jpg)圖11：瀏覽器搜索側邊欄和設定對話方塊。
+(eyeos12.jpg)圖12：eyeFTP 的畫面。
+(eyeos13.jpg)圖13：eyeContacts 添加新的連絡人或從 .vcf 文件中導入連絡人。
+(eyeos14.jpg)圖14：給eyeCalendar 添加日程。
+(eyeos15.jpg)圖15：eyeMessages，用於eyeOS用於之間的即時通訊。
+(eyeos16.jpg)圖16：eyeMessages，接收到了來自eric的即時通訊。
+(eyeos17.jpg)圖17：相當於QQ 群的 eyeBoard。
+(eyeos18.jpg)圖18：eyeMail，郵件客戶端。
+(eyeos19.jpg)圖19：eyeFeeds，用於閱讀用戶訂閱到 RSS 新聞。
+(eyeos20.jpg)圖20：使用 eyeDocs 寫文檔。
+(eyeos21.jpg)圖21：eyeSheets。
+(eyeos22.jpg)圖22：eyeNotes，用來記錄自己的日記或者心得。
+(eyeos23.jpg)圖23：eyeChess，eyeOS 提供的國際象棋。
+(eyeos24.jpg)圖24：eyeProcess進程管理軟體。
+(eyeos25.jpg)圖25：eyeCal，一個精巧的計算器。
+(eyeos26.jpg)圖26：從命令列運行應用程式。
+(eyeos27.jpg)圖27：系統組態面板。
+(eyeos28.jpg)圖28：修改使用者密碼。
+(eyeos29.jpg)圖29：eyeApps應用程式視窗。
+(eyeos30.jpg)圖30：eyeManageApps應用程式管理視窗。
+(eyeos31.jpg)圖31：eyeOS豐富的外掛程式。
+(eyeos32.jpg)圖32：上傳的meyeScience外掛程式。
+(eyeos33.jpg)圖33 ：安裝外掛程式確認對話方塊。
+(eyeos34.jpg)圖34：安裝好的 meyeScience。
+(eyeos35.jpg)圖35：meyeScience 的畫面。
