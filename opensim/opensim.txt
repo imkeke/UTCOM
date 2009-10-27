@@ -23,6 +23,7 @@ Sl客户端：
 wget http://dist.opensimulator.org/opensim-0.6.7-release.tar.gz
 然后进行解压：
 tar -xzvf opensim-0.6.7-release.tar.gz
+mv -r opensim-0.6.7-release opensim
 
 2.解决依赖关系并构建编译环境：
 在编译安装opensim之前需要安装它所依赖的软件包，使用以下命令来完成：
@@ -30,15 +31,13 @@ sudo apt-get install subversion nant mono-gmcs libmono-microsoft8.0-cil libmono-
 
 3.编译安装：
 首先解压刚才下载回来的源代码包，并且打开终端机cd进入opensim目录。步骤如下：
-cd opensim-0.6.7-release
+cd opensim
 ./runprebuild.sh
 nant
 经过几分钟的等待（视硬体配置高低而定），便出现了BUILD SUCCEEDED的字样，说明安装成功，如图（01）.
 
-d8dd92c7-c0da-40c7-a06b-9fa18e3c93b8
-
 到了此刻，Opensim已经编译安装完成了，接下来就是要启动它了，在启动它之前我们先做一件事情，将配置文件初始化，使用以下命令即可：
-cd opensim
+cd opensim/bin
 cp OpenSim.ini.example OpenSim.ini
 
 配置文件初始化后再来看看几个命令行参数，在运行OpenSim时可以加在命令行后面：
@@ -59,6 +58,22 @@ Grid模式就不同了，5个服务（User、Grid、Asset、Inventory、Messagin
 在OpenSim.ini这个文件里面可以配置任何我们所需要的信息。在运行独立模式之前先检查一下OpenSim.ini中的gridmode是否为false，默认就是false。然后用如下命令：
 cd opensim/bin
 mono OpenSim.exe
-接下来会看到一连串的输出信息，当启动完毕后系统将会提示几个信息
-
+接下来会看到一连串的输出信息，当启动完毕后系统将会提示几个信息，这里可以直接按回车使用默认值，也可以输入自己想要的数据，流程如下：
+如图05，输入一个新的“域”名，这里我输入“Test_world”。
+Region Location：使用默认值。
+Internal IP address：这里，就按照默认的0.0.0.0便可（0.0.0.0表示在监听任何IP地址。也就是一个通配地址）。
+Internal port：端口设置，这里使用任意端口，当然，最好使用默认的9000.
+Allow alternate ports：使用备用端口，直接回车按默认值。
+External host name：这里要根据自己的需求进行配置，如果仅仅是在运行OpenSim.exe服务的机器上使用SL客户端来连接到OpenSim服务，那么这里使用默认的127.0.0.1便可。如果希望在其他联网的机器上使用客户端来连接到OpenSim服务上，则这里需要配置为机器的实际IP地址或者机器名。我在这里输入服务器的IP地址。
+接下来输入一些Master Avatar的相关信息就可以了。
+最终完成之后OpenSim就开启了，如图06。
+在提示符下我们能做什么呢，输入help看看吧，是不是有很多命令，接着我们就一步步的来测试。
+我们新建一个用户，在Region (Test_World) #后面输入create user。
+接着系统提示你输入相关信息：
+First name：chen 回车
+Last name：lin 回车
+Password：输入密码回车
+Start Region X：回车使用默认值。
+Start Region Y：回车使用默认值。
+Email ：输入电邮地址。
 
