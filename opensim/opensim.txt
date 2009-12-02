@@ -23,7 +23,7 @@ Sl客户端：
 wget http://dist.opensimulator.org/opensim-0.6.7-release.tar.gz
 然后进行解压：
 tar -xzvf opensim-0.6.7-release.tar.gz
-mv -r opensim-0.6.7-release opensim
+mv opensim-0.6.7-release opensim
 
 2.解决依赖关系并构建编译环境：
 在编译安装opensim之前需要安装它所依赖的软件包，使用以下命令来完成：
@@ -76,4 +76,3 @@ Password：输入密码回车
 Start Region X：回车使用默认值。
 Start Region Y：回车使用默认值。
 Email ：输入电邮地址。
-
