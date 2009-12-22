@@ -1,9 +1,0 @@
-OpenSim方面，我希望是像VirtualBox一樣的長度。同樣分為三個部分。
-Part1 OpenSim簡介及安裝
-Part2 自製島嶼、與Secondlife的資料交換(貨幣、人物之類)
-Part3 Grid Mode (可在一台電腦上用VirtualBox安裝兩個OpenSim Server，
-OpenSim Server可以不用GUI以節省資源)
-大致是這樣。您認為如何？
-
-另外有一篇不錯的文章，中國人寫的，不過是日文。
-http://www.thinkit.co.jp/article/129/1/
