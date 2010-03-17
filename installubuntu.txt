@@ -19,3 +19,6 @@ root (hd0,4)
 kernel (hd0,4)/vmlinuz boot=casper iso-scan/filename=/ubuntu.iso ro quiet splash --
 label check live-install
 initrd (hd0,4)/initrd.lz
+
+Archlinux±¸·Ý:
+tar -cvpzf /media/D/Arch-backup.tgz -exclude=/dev -exclude=/media -exclude=/mnt -exclude=/proc -exclude=/sys -exclude=/tmp -exclude=/var/tmp -exclude=/lost+found /
