@@ -5,14 +5,13 @@
 			<?php while (have_posts()) : the_post(); ?>
 			<div class="entry">
 				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-				<span class="date">by  <?php the_author() ?>,   <?php the_time('m jS, Y') ?>,  <?php comments_popup_link('No Comments ', '1 Comment ', '% Comments '); ?>	,  <?php the_category(', ') ?></span>
+				<span class="date">by  <?php the_author() ?>,   <?php the_time('m jS, Y') ?>, <?php the_category(', ') ?></span>
 				<div class="entrybody">
 					<?php the_content(__('Read more &raquo;'));?>
 					<?php link_pages('<p><strong>Pages:</strong>','</p>','number'); ?>
 				</div>
-				<div id="tags">
-					<?php the_tags('tags: ', ' , ' , ''); ?>
-				</div>
+				<div class="date tags"><?php the_tags('<div class="firsttag"><em>Tags: </em>', '<span></span><div class="blank"></div></div><div>', '<span></span><div class="blank"></div></div>'); ?></div>
+				<div class="blank"></div>
 			</div>
 			<div class="comments-template">
 				<?php comments_template(); ?>
