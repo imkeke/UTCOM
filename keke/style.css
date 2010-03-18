@@ -25,7 +25,11 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend
 	}
 label, input[type="submit"]{cursor:pointer;}
 :focus{outline: 0;}
-ol, ul{list-style: none;}
+ul{list-style: none;}
+ol li {
+	font-size: 13px;
+	color: #000;
+}
 table
 	{
 		border-collapse: separate;
