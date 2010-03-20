@@ -761,12 +761,6 @@ ul.related_post
 		clear:both;
 	}
 /*404*/
-#img404
-	{
-		position:absolute;
-		top:35px;
-		left:200px;
-	}
 .text404
 	{
 		position:relative;
