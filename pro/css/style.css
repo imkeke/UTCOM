@@ -1,0 +1,227 @@
+/***** cssbegain *****/
+body {
+	background: url(../images/bg.png);
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+p { line-height: 1.5; }
+#wrap {
+	height: auto;
+	width: 438px;
+	margin: 20px auto 0;
+}
+.blank {
+	clear: both;
+}
+
+/***** header *****/
+#header {
+	background: url(../images/hdbg.png) no-repeat center top;
+	height: 66px;
+}
+#header h1 a {
+	background: url(../images/logo.png) no-repeat;
+	display: block;
+	text-indent: -9999em;
+	overflow: hidden;
+	height: 45px;
+	width: 195px;
+	position: relative;
+	top: 18px;
+	left: 25px;
+}
+#navihome {
+	background: url(../images/navibg.png) no-repeat;
+	height: 47px;
+}
+#navihome ul {
+	padding-top: 10px;
+}
+#navihome ul li {
+	float: left;
+	margin: 0 50px 0 50px;
+}
+#navihome ul li a {
+	color: #a23f0e;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #FFBC7B;
+}
+#navihome ul li a:hover {
+	color: #7c2f08;
+}
+
+/***** content *****/
+#contentout,#footer {
+	background: url(../images/contentbg.png) repeat-y center;
+}
+#content {
+	width: 380px;
+	margin: 0 auto;
+	background: url(../images/imagebg.png) no-repeat transparent center top;
+}
+.scrollable {
+	position: relative;
+	overflow: hidden;
+	width: 300px;
+	height: 280px;
+	margin: 0 auto;
+	padding: 5px 0;
+	float: left;
+	margin: 0 13px;
+}
+.scrollable .items {
+	position: absolute;
+	width: 20000em;
+}
+.items div {
+	width: 300px;
+	height: 225px;
+	float: left;
+	background: #fff;
+}
+.items div img {
+	cursor: pointer;
+}
+/***** tips *****/
+.tips {
+	color: #fff;
+	display: none;
+	position: absolute;
+	width: 249px;
+	min-height: 50px;
+	height: auto !important;
+	height: 50px;
+	background: url(../images/tipsbg.png) no-repeat left top;
+	padding: 15px 10px 0 30px;
+}
+.tips dl {
+	line-height: 1.5;
+}
+.tips dd.clear {
+	height: 15px;
+	float: none;
+	clear: both;
+}
+#lastdd {
+	height: 8px;
+	font-size: 0;
+}
+.tips dt {
+	float: left;
+	width: 40px;
+}
+.tips dd {
+	color: #ccc;
+	width: 200px;
+	float: left;
+}
+.tips a {
+	padding-bottom: 1px;
+	text-decoration: none;
+	color: #ffcb59;
+	border-bottom: 1px dotted #ffcb59;
+}
+.tips a:hover {
+	color: #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.tipsbottom {
+	height: 15px;
+	width: 289px;
+	background: url(../images/tipsbg.png) no-repeat left bottom;
+	position: absolute;
+	left: 0;
+}
+.items div p{
+	color: #9f520a;
+	text-shadow: 0 1px 0 #faf8f6;
+	font-family: Tahoma, 黑体;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 20px;
+}
+.items .active {
+	background: #25a9d9;
+}
+.navi a {
+	color: #000;
+}
+.navi a.active {
+	color: #fff;
+}
+#content > a {
+	background: url(../images/button.png) no-repeat left top;
+	width:27px;
+	height: 28px;
+}
+#content > a, .navi a {
+	display: block;
+	overflow: hidden;
+	text-indent: -9999em;
+	float: left;
+}
+.prev, .next {
+	margin-top: 100px;
+}
+.next {
+	background-position: -27px 0 !important;
+}
+.prev:hover {
+	background-position: left center !important;
+}
+.next:hover {
+	background-position: -27px -28px !important;
+}
+.prev:active {
+	background-position: left -56px !important;
+}
+.next:active {
+	background-position: -27px -56px !important;
+}
+.navi {
+	height: 19px;
+	width: 135px;
+	margin: 0 auto;
+}
+.navi a {
+	margin-left: 20px;
+	width: 18px;
+	height: 19px;
+	background: url(../images/navibutton.png) no-repeat left top;
+}
+.navi a.active {
+	background: url(../images/navibutton.png) no-repeat -18px top;
+}
+.navi a {
+	cursor: pointer;
+}
+.about {
+	margin: 0 40px;
+	color: #9f520a;
+	padding: 10px 0;
+	text-shadow: 0 1px 0 #fff;
+}
+.about h3 {
+	margin: 10px 0;
+}
+.about p {
+	line-height: 1.7;
+	margin: 5px 0;
+}
+
+/***** footer *****/
+#footertop {
+	background: url(../images/footertopbg.png) no-repeat center top;
+	height: 2px;
+	font-size: 0;
+}
+#footer {
+	color: #615344;
+	text-shadow: 0 1px 0 #fff;
+	padding: 5px 0 5px 35px;
+}
+#footerbottom {
+	background: url(../images/footerbottombg.png) no-repeat center top;
+	height: 12px;
+	font-size: 0;
+}
