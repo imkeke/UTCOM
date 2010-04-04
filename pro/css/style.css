@@ -102,8 +102,8 @@ p { line-height: 1.5; }
 	float: none;
 	clear: both;
 }
-#lastdd {
-	height: 8px;
+.lastdd {
+	height: 8px !important;
 	font-size: 0;
 }
 .tips dt {
@@ -115,8 +115,11 @@ p { line-height: 1.5; }
 	width: 200px;
 	float: left;
 }
+strong {
+	font-weight: bold !important;
+}
 .tips a {
-	padding-bottom: 1px;
+	margin: 0 3px 0;
 	text-decoration: none;
 	color: #ffcb59;
 	border-bottom: 1px dotted #ffcb59;
