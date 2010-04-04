@@ -2,15 +2,10 @@
 2）boot.ini加一行：C:\GRLDR="GRUB 4 DOS"，稍候重启就选这个。
 3）下载9.10的Desktop ISO放D盘根目录，并且解压ISO在casper文件夹取vmlinuz和initrd.lz放D盘根目录，最后在C盘下建个menu.lst，内容为：
 title Install Ubuntu
-
 root (hd0,4)
-
 kernel (hd0,4)/vmlinuz boot=casper iso-scan/filename=/ubuntu.iso ro quiet
-
 splash locale=zh_CN.UTF-8
-
 initrd (hd0,4)/initrd.lz
-
 重启，然后就进入Live CD模式了。安装前打开终端运行sudo umount -l /isodriver以免发生错误中断安装。
 
 有可能是这个：
@@ -19,6 +14,13 @@ root (hd0,4)
 kernel (hd0,4)/vmlinuz boot=casper iso-scan/filename=/ubuntu.iso ro quiet splash --
 label check live-install
 initrd (hd0,4)/initrd.lz
+
+10.04的安裝方法：
+title install Ubuntu 10.04 beta1
+root (hd1,5)
+kernel /vmlinuz boot=casper iso-scan/filename=/Ubuntu-10.04-beta1-alternate-i386.iso ro quiet splash locale=zh_CN.UTF-8
+initrd /initrd.gz
+boot
 
 Archlinux备份:
 tar -cvpzf /media/D/Arch-backup.tgz -exclude=/dev -exclude=/media -exclude=/mnt -exclude=/proc -exclude=/sys -exclude=/tmp -exclude=/var/tmp -exclude=/lost+found /
