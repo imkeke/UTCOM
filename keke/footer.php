@@ -40,5 +40,8 @@ try {
 var pageTracker = _gat._getTracker("UA-10701187-1");
 pageTracker._trackPageview();
 } catch(err) {}</script>
+<!--[if IE 6]>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/killie6.js"></script>
+<![endif]-->
 </body>
 </html>

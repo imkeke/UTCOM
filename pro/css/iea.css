@@ -1,0 +1,22 @@
+#header, #navihome, #header a, #content, .navi a, .prev, .next, #footertop, #footer, #footerbottom {
+	behavior: url(css/iepngfix.htc);
+}
+#contentout {
+	background: url(../images/iecontent.png) no-repeat center top;
+}
+.tips, .tipsbottom {
+	background: none;
+	background-color: #000;
+}
+.items div {
+	background: transparent;
+}
+.navi a {
+	display: inline;
+}
+.scrollable {
+	display: inline;
+}
+.prev, .next {
+	cursor: pointer;
+}

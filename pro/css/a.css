@@ -1,6 +1,6 @@
 /***** cssbegain *****/
 body {
-	background: url(../images/bg.png);
+	background: url(../images/bg.png) #F0DF54 repeat-x center top;
 	font-family: Tahoma, Helvetica, Arial, sans-serif;
 	font-size: 12px;
 }
@@ -35,11 +35,12 @@ p { line-height: 1.5; }
 	height: 47px;
 }
 #navihome ul {
-	padding-top: 10px;
+	padding-top: 12px;
 }
 #navihome ul li {
+	display: inline;
 	float: left;
-	margin: 0 50px 0 50px;
+	margin: 0 30px 0 38px;
 }
 #navihome ul li a {
 	color: #a23f0e;
@@ -52,7 +53,7 @@ p { line-height: 1.5; }
 
 /***** content *****/
 #contentout,#footer {
-	background: url(../images/contentbg.png) repeat-y center;
+	background: url(../images/contentbg.png) repeat-y center top;
 }
 #content {
 	width: 380px;
@@ -152,19 +153,17 @@ strong {
 .navi a.active {
 	color: #fff;
 }
-#content > a {
+.prev, .next {
 	background: url(../images/button.png) no-repeat left top;
 	width:27px;
 	height: 28px;
+	margin-top: 100px;
 }
-#content > a, .navi a {
+.prev, .next, .navi a {
 	display: block;
 	overflow: hidden;
 	text-indent: -9999em;
 	float: left;
-}
-.prev, .next {
-	margin-top: 100px;
 }
 .next {
 	background-position: -27px 0 !important;

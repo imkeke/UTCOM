@@ -23,6 +23,9 @@ a:hover {
 	background: url(../images/b/wrapbg.png) no-repeat center top;
 	margin: 0 auto;
 }
+.wrapft {
+	background: url(../images/b/ft.png) no-repeat center bottom;
+}	
 #wrap {
 	height: auto;
 	width: 590px;
@@ -40,10 +43,8 @@ a:hover {
      height: 0;
      }
 .clearfix { display: inline-block; }
-/* start commented backslash hack \*/
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
-/* close commented backslash hack */
 
 /***** header *****/
 #header {
@@ -63,7 +64,8 @@ a:hover {
 #navihome {
 	float: right;
 	background: #dcdccc;
-	padding: 10px 15px;
+	padding: 8px 0;
+	padding-left: 12px;
 	margin-top: 5px;
 	-moz-border-radius: 4px; 
 	-webkit-border-radius: 4px;
@@ -74,16 +76,36 @@ a:hover {
 }
 #navihome ul li {
 	float: left;
-	margin-right: 10px;
+	margin-right: 12px;
 }
 #navihome ul li a {
-	font-size: 14px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	text-indent: -9999px;
+	background: url(../images/b/navi.png) no-repeat left top;
 	border: none;
-	text-shadow: 0 1px 0 #fff;
-	color: #4d4d4d;
 }
 #navihome ul li a:hover {
-	color: #222;
+	background-position: 0 -20px;
+}
+.db {
+	background-position: -60px 0 !important;
+}
+.db:hover {
+	background-position: -60px -20px !important;
+}
+.gg {
+	background-position: -40px 0 !important;
+}
+.gg:hover {
+	background-position: -40px -20px !important;
+}
+.fk {
+	background-position: -20px 0 !important;
+}
+.fk:hover {
+	background-position: -20px -20px !important;
 }
 
 /***** content *****/
@@ -94,7 +116,7 @@ a:hover {
 	height: 50px;
 }
 .command a {
-	background: url(../images/b/enter.png) no-repeat;
+	background: url(../images/b/enter.png) no-repeat 0 0;
 	display: block;
 	text-indent: -9999em;
 	overflow: hidden;
@@ -103,6 +125,12 @@ a:hover {
 	border: none;
 	float: left;
 	margin: 0 20px;
+}
+.command a:hover {
+	background-position: 0 -26px;
+}
+.command a:active {
+	background-position: 0 -52px;
 }
 .command img {
 	float: left;
@@ -170,6 +198,6 @@ dd {
 
 /***** footer *****/
 #footer {
-	margin-top: 5px;
-	line-height: 2.5;
+	margin-top: 100px;
+	height: 100px;
 }
