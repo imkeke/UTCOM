@@ -5,16 +5,12 @@ $(document).ready(function() {
 	$("#fff").scrollable({
 		size: 1,
 		clickable: false,
+		loop: true,
 		speed: 700
 	}).navigator();
 	
 	/*
 	 * tooltips
-	$(".items div img").hover(function() {
-		$(".tips").show("slow");
-	}, function() {
-		$(".tips").hide("slow");
-	});
 	 */
 	$(".items div img").tooltip({
 		effect: "fade",	
@@ -26,6 +22,6 @@ $(document).ready(function() {
 
 	/*
 	 * change the .tips dom position
-	 */
+	*/
 	$(".tips").insertAfter("#wrap");
 });

@@ -79,6 +79,7 @@ a:hover {
 	margin-right: 12px;
 }
 #navihome ul li a {
+	overflow: hidden;
 	display: block;
 	width: 20px;
 	height: 20px;
@@ -141,7 +142,13 @@ a:hover {
 .cmdclick {
 	margin-top: -13px;
 }
-.info img{
+.aboutme {
+	width: 580px;
+}
+.aboutme p {
+	line-height: 1.7;
+}
+.info img, .aboutme {
 	position: absolute;
 	top: -300px;
 }
@@ -149,7 +156,7 @@ a:hover {
 	overflow: hidden;
 }
 .works {
-	margin-top: 20px;
+	margin-top: 30px;
 }
 .items {
 	margin-top: 70px;

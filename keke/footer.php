@@ -5,7 +5,7 @@
 	<div id="mailtome">
 		<a href="mailto:zhengkefeng15<<#>>gmail.com">mailtome</a>
 	</div>
-	<div id="son2">copyright &copy; 2009
+	<div id="son2">copyright &copy; 2010
     <a href="http://www.imkeke.cn">keke</a>  |  Theme by: <a href="http://www.imkeke.net">keke</a></div>
 	<div id="son3">
 		<a href="#" onclick="goTop();return false;">top</a>

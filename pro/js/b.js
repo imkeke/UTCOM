@@ -3,26 +3,23 @@ $(document).ready(function() {
 
 	// 计算需要的值
 	var dfheight = $("img.myability").height();
-	var unameimg = $("img.aboutme").height();
-// 	var winwidth = $(window).width();
-// 	var imgleft = (winwidth + 590)/2;
-// 	$(".info img").css("left", "imgleft"); 
+	var unameimg = $("div.aboutme").height();
 
 	// 第一个点击
 	$("#dfa").click(function() {
 		if (n == 2) {
-			$("img.aboutme").animate({top: 450}, 700);	
+			$("div.aboutme").animate({top: 415}, 700);	
 		}
-		$(this).changeinfo(190, dfheight);
+		$(this).changeinfo(190, dfheight + 30);
 		n = 1;
 		$(this).unbind();
 	});
 
 	// 第二个点击
 	$("#unamea").click(function () {
-		var infotop = 100;
+		var infotop;
 		if (n == 1) {
-			infotop = 450;
+			infotop = 415;
 		} else {
 			infotop = 240;
 		}
@@ -37,7 +34,7 @@ $(document).ready(function() {
 		$(this).next().fadeOut("slow");
 		var $info = $(this).parent().next().next();
 		var $infoimg = $info.children();
-		$info.animate({height: imgheight + 50}, 700, function(){
+		$info.animate({height: imgheight}, 700, function(){
 			$infoimg.animate({
 				top: infotop,
 				opacity: 0.2
